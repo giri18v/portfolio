@@ -131,7 +131,7 @@ export default function Portfolio() {
         <section id="contact" className="py-16 px-6 md:px-20 lg:px-32 bg-[#112240]">
           <h2 className="text-3xl font-bold mb-8 text-[#CCD6F6]">Get in Touch</h2>
           <p className="text-xl mb-8">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
           </p>
           <a href="mailto:giri18v@outlook.com" className="bg-[#64FFDA] text-[#0A192F] px-6 py-3 rounded-full text-lg font-semibold transition-colors hover:bg-[#64FFDA] hover:text-[#0A192F]">
             Say Hello
