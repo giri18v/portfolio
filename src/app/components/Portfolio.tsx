@@ -114,6 +114,16 @@ export default function Portfolio() {
                 <li>Conducted in-depth analysis of database usage, fine-tuning queries for optimal performance.</li>
               </ul>
             </div>
+            <div>
+              <h3 className="text-2xl font-semibold text-[#64FFDA]">Software Engineer</h3>
+              <p className="text-lg">TECH MAHINDRA, BANGALORE (INDIA) | OCT 2016 – JULY 2017</p>
+              <p className="mt-2">Client: British Telecommunications</p>
+              <ul className="list-disc list-inside mt-4 space-y-2">
+                <li>Developed and maintained telecommunications software solutions for BT.</li>
+                <li>Collaborated with cross-functional teams to implement system requirements.</li>
+                <li>Participated in agile development processes and sprint planning.</li>
+              </ul>
+            </div>
           </div>
         </section>
 
