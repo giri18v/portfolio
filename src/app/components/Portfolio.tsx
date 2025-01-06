@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, Linkedin, Mail, Download } from 'lucide-react'
+import { Menu, Linkedin, Mail, Download, Github } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Portfolio() {
@@ -75,6 +75,23 @@ export default function Portfolio() {
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://github.com/giri18v"
+                  className="flex items-center gap-2 text-[#64FFDA] hover:text-[#64FFDA] transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <Github className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://leetcode.com/u/giri18v/"
+                  className="flex items-center gap-2 text-[#64FFDA] hover:text-[#64FFDA] transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="font-bold">LC</span>
                 </a>
                 <a 
                   href="tel:+44 07771254853"
