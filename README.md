@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Giridharan Veeran — Portfolio Redesign
 
-## Getting Started
+A responsive Next.js + TypeScript portfolio, redesigned around engineering work, Java solution architecture, experience and upcoming technical writing.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## What's changed
 
-To learn more about Next.js, take a look at the following resources:
+- Editorial dark visual direction with lime/teal accent, improved typography and responsive mobile navigation.
+- New hero with existing profile photo, current focus and social links.
+- Experience timeline reflecting Publicis Sapient (current), Virtusa and Tech Mahindra, based on the supplied CV.
+- Engineering project cards clearly marked as **in development** or **planned**, rather than implying completed public projects.
+- Grouped engineering capabilities, learning-series preview and clear contact CTA.
+- Updated page metadata, semantic landmarks and accessibility improvements.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Editing content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Most copy lives in `src/app/components/Portfolio.tsx` at the top in `experience`, `expertise`, `projects` and `articles` arrays. Visual styles are in `src/app/globals.css`.
 
-## Deploy on Vercel
+## Before publishing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Verify titles, dates, project claims and external profile links.
+2. Add published article URLs when the blog is implemented; the current writing cards are **coming soon** previews, not live articles.
+3. Test the production build with the installed dependencies and deploy using your existing hosting workflow.
+4. Schedule a separately tested framework/dependency upgrade; the current Next.js version was preserved to minimise redesign risk.
