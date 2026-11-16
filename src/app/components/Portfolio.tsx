@@ -17,6 +17,7 @@ const navigation = [
   { label: 'Experience', href: '#experience' },
   { label: 'Expertise', href: '#expertise' },
   { label: 'Writing', href: '#writing' },
+  { label: 'Blog', href: '/blog' },
 ]
 
 const experience = [
@@ -90,9 +91,8 @@ const projects = [
 ]
 
 const articles = [
-  { number: '01', category: 'DESIGN PATTERNS', title: 'Singleton Pattern, explained properly', detail: 'Eager, lazy, double-checked locking and enum', read: 'COMING SOON' },
-  { number: '02', category: 'DESIGN PATTERNS', title: 'Factory Method in a payments application', detail: 'Reducing coupling through object creation', read: 'COMING SOON' },
-  { number: '03', category: 'JAVA CONCURRENCY', title: 'Visibility, atomicity and the Java Memory Model', detail: 'From volatile to compare-and-set', read: 'COMING SOON' },
+  { number: '01', category: 'DESIGN PATTERNS · DAY 1', title: 'My Notes on Singleton Design Pattern', detail: 'Lazy, synchronized and double-checked locking — what I learned', read: 'READ ARTICLE', href: '/blog/singleton-design-pattern-java' },
+  { number: '02', category: 'NEXT TOPIC', title: 'Volatile and Atomicity in Java', detail: 'The next topic on my learning list', read: 'NOT PUBLISHED' },
 ]
 
 function BrandMark() {
@@ -178,7 +178,7 @@ export default function Portfolio() {
 
         <section id="expertise" className="section expertise-section"><div className="container"><div className="section-top"><div><span className="section-kicker">04 / CAPABILITIES</span><h2 className="section-heading">My technical <span>toolkit.</span></h2></div><p className="section-intro">A blend of deep implementation skills and the architecture thinking that connects them.</p></div><div className="expertise-grid">{expertise.map((item) => {const Icon = item.icon; return <article className="expertise-card" key={item.title}><div className="expertise-head"><span>{item.number} / 04</span><Icon size={25} strokeWidth={1.7}/></div><h3>{item.title}</h3><p>{item.text}</p><div className="expertise-tags">{item.tags.map(tag=><span key={tag}>{tag}</span>)}</div></article>})}</div></div></section>
 
-        <section id="writing" className="section container writing-section"><div className="section-top"><div><span className="section-kicker">05 / LEARNING IN PUBLIC</span><h2 className="section-heading">Notes from <span>the journey.</span></h2></div><p className="section-intro">Short, practical deep dives on Java, patterns and system design. Code first, opinions backed by experiments.</p></div><div className="writing-feature"><div className="writing-feature-icon"><BookOpen size={25}/></div><div><span className="writing-feature-kicker">UPCOMING SERIES</span><h3>30 Days of Java Design & Architecture</h3><p>Learn the concept. Build the example. Test the trade-offs. Share what works.</p></div><span className="writing-feature-tag">ARTICLES COMING SOON</span></div><div className="article-list">{articles.map((article) => <div className="article-item" key={article.number}><span className="article-number">{article.number}</span><div className="article-details"><span className="article-category">{article.category}</span><h3>{article.title}</h3><p>{article.detail}</p></div><span className="article-status">{article.read}</span><ArrowUpRight className="article-arrow" size={19}/></div>)}</div></section>
+        <section id="writing" className="section container writing-section"><div className="section-top"><div><span className="section-kicker">05 / LEARNING IN PUBLIC</span><h2 className="section-heading">Notes from <span>the journey.</span></h2></div><p className="section-intro">Short, practical deep dives on Java, patterns and system design. Code first, opinions backed by experiments.</p></div><div className="writing-feature"><div className="writing-feature-icon"><BookOpen size={25}/></div><div><span className="writing-feature-kicker">LEARNING SERIES</span><h3>30 Days of Java Design & Architecture</h3><p>Learn the concept. Build the example. Test the trade-offs. Share what works.</p></div><span className="writing-feature-tag">NEW ARTICLE AVAILABLE</span></div><div className="article-list">{articles.map((article) => <a href={'href' in article ? article.href : '/blog'} className="article-item" key={article.number}><span className="article-number">{article.number}</span><div className="article-details"><span className="article-category">{article.category}</span><h3>{article.title}</h3><p>{article.detail}</p></div><span className="article-status">{article.read}</span><ArrowUpRight className="article-arrow" size={19}/></a>)}</div><a href="/blog" className="text-link" style={{marginTop:30}}>View all notes <ArrowRight size={16}/></a></section>
 
         <section className="section contact-section" id="contact"><div className="container contact-content"><span className="section-kicker">06 / GET IN TOUCH</span><h2>Let&apos;s build<br/><span>something meaningful.</span></h2><p>Have a challenging engineering problem, an architecture opportunity, or just want to exchange ideas? My inbox is open.</p><a href="mailto:giri18v@outlook.com" className="button-primary">Start a conversation <ArrowUpRight size={19}/></a><div className="contact-social"><a href={GITHUB_URL} target="_blank" rel="noopener noreferrer"><Github size={18}/> Explore GitHub <ArrowUpRight size={14}/></a><a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer"><Linkedin size={18}/> Connect on LinkedIn <ArrowUpRight size={14}/></a></div><div className="contact-decor" aria-hidden="true"><span>&lt;/&gt;</span></div></div></section>
       </main>
