@@ -161,7 +161,7 @@ export default function SingletonArticle() {
             <p>I also realised that just because a design pattern solves a problem doesn&apos;t mean we need to use it everywhere.</p>
             <p>I&apos;ve committed my implementations to GitHub as part of this learning journey.</p>
             <p>These are my personal learning notes, which I&apos;m sharing here in case they&apos;re useful to anyone revisiting Java design patterns.</p>
-            <div className="note-end"><div><span className="note-section-number">NEXT TOPIC</span><strong>Volatile and Atomicity</strong><p>Not published yet — this is what I plan to learn next.</p></div><a href="https://github.com/giri18v/path-to-java-architect" target="_blank" rel="noopener noreferrer"><Github size={16}/> View code <ArrowUpRight size={14}/></a></div>
+            <div className="note-end"><div><span className="note-section-number">NEXT TOPIC</span><strong>Volatile and AtomicInteger in Java</strong><p>Continue with Day 2: my payment worker and atomic counter examples.</p></div><a href="https://github.com/giri18v/path-to-java-architect" target="_blank" rel="noopener noreferrer"><Github size={16}/> View code <ArrowUpRight size={14}/></a></div>
             <p className="singleton-tags">#PathToJavaArchitect &nbsp; #Java &nbsp; #DesignPatterns &nbsp; #Multithreading</p>
           </section>
         </article>

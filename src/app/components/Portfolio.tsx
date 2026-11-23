@@ -92,7 +92,7 @@ const projects = [
 
 const articles = [
   { number: '01', category: 'DESIGN PATTERNS · DAY 1', title: 'My Notes on Singleton Design Pattern', detail: 'Lazy, synchronized and double-checked locking — what I learned', read: 'READ ARTICLE', href: '/blog/singleton-design-pattern-java' },
-  { number: '02', category: 'NEXT TOPIC', title: 'Volatile and Atomicity in Java', detail: 'The next topic on my learning list', read: 'NOT PUBLISHED' },
+  { number: '02', category: 'JAVA CONCURRENCY · DAY 2', title: 'My Notes on Volatile and AtomicInteger in Java', detail: 'Visibility, lost updates, AtomicInteger and CAS — what I tried', read: 'READ ARTICLE', href: '/blog/volatile-and-atomicinteger-java' },
 ]
 
 function BrandMark() {

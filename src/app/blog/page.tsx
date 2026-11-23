@@ -20,7 +20,7 @@ export default function BlogPage() {
         <div><span>DAY 01 · DESIGN PATTERNS · JAVA</span><h2>My Notes on Singleton Design Pattern</h2><p>Lazy Singleton, synchronized and Double-Checked Locking. What I tried and what I learned.</p><Link href="/blog/singleton-design-pattern-java" className="blog-primary-link">Read my Day 1 notes <ArrowUpRight size={17}/></Link></div>
         <div className="blog-index-code" aria-hidden="true"><span>if (instance == null) {'{'}</span><span>  synchronized (...) {'{'}</span><strong>{'    // one instance'}</strong><span>  {'}'}</span><span>{'}'}</span></div>
       </div>
-      <div className="blog-more"><span>NEXT / LEARNING NOTES</span><div><h3>Volatile and Atomicity in Java</h3><p>The next topic on my learning list. Article not published yet.</p></div><span className="blog-soon">NEXT TOPIC</span></div>
+      <Link href="/blog/volatile-and-atomicinteger-java" className="blog-more day2-index-link"><span>DAY 02 / JAVA CONCURRENCY</span><div><h3>My Notes on Volatile and AtomicInteger in Java</h3><p>What I learned from a payment worker, a shared counter, and the lost-update problem.</p></div><span className="blog-soon">READ DAY 2 ↗</span></Link>
       <div className="blog-index-bottom"><a href="https://github.com/giri18v/path-to-java-architect" target="_blank" rel="noopener noreferrer"><Github size={17}/> Java examples on GitHub <ArrowUpRight size={15}/></a><Link href="/">Back to portfolio <ArrowUpRight size={15}/></Link></div>
     </div>
   </main>
